@@ -1,0 +1,19 @@
+{
+  "name": "wxappcanvastext",
+  "version": "1.0.1-0",
+  "description": "小程序canvas文本绘制",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justwe7/wxAppCanvasText.git"
+  },
+  "author": "huaxi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justwe7/wxAppCanvasText/issues"
+  },
+  "homepage": "https://github.com/justwe7/wxAppCanvasText#readme"
+}
