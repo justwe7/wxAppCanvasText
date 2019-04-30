@@ -1,5 +1,5 @@
 {
-  "name": "wxappcanvastext",
+  "name": "wx-ctxtext",
   "version": "1.0.1-0",
   "description": "小程序canvas文本绘制",
   "main": "index.js",
