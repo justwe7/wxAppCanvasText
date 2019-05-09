@@ -44,19 +44,20 @@ new DrawTextWrap(config).draw()
 ![Alt text](/img/2.png "Optional title")
 
 ### 配置项
-> 所有单位以 750设计稿来换算的  直接以量出的px值设置即可   
+> 所有单位以 750设计稿来换算的 
 
 
-| 配置项           | 描述                                                                                                                  |    
-| ---------------- | --------------------------------------------------------------------------------------------------------------------- |    
-| ctx              | 小程序获取到的canvas画布 即：wx.createCanvasContext("renderImg")                                                      |    
-| [,screen]           | 设计稿宽度 默认是2倍为750px的,非必填                                                                                       |    
-| startX           | 基于canvas画布的x轴坐标开始绘制                                                                                       |    
-| startY           | 基于canvas画布的y轴坐标开始绘制                                                                                       |    
-| maxWidth         | 到此宽度开始折行                                                                                                      |    
-| content          | 文本设置样式,初始值(这些值非必填项) fontsize = 16, color = '#333', lineHeight = 22, baseline = 'top', align = 'left'  |    
-| content.fontsize | 文字大小                                                                                                              |    
-| content.baseline | 文字竖直对齐方式，参见[文档](https://developers.weixin.qq.com/miniprogram/dev/api/CanvasContext.setTextBaseline.html) |    
-| content.align    | 文字对齐                                                                                                              |    
-| content.color    | 文本颜色                                                                                                              |    
-| content.text     | 绘制的内容                                                                                                            |    
+| 配置项           | 描述                                                                                                                  |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------- |
+| ctx              | 小程序获取到的canvas画布 即：wx.createCanvasContext("renderImg")                                                      |
+| [,screen]        | 设计稿宽度 默认是2倍为750px的,非必填                                                                                  |
+| startX           | 基于canvas画布的x轴坐标开始绘制                                                                                       |
+| startY           | 基于canvas画布的y轴坐标开始绘制                                                                                       |
+| maxWidth         | 到此宽度开始折行                                                                                                      |
+| content          | 文本设置样式,初始值(这些值非必填项) fontsize = 16, color = '#333', lineHeight = 22, baseline = 'top', align = 'left'  |
+| content.fontsize | 文字大小                                                                                                              |
+| content.baseline | 文字竖直对齐方式，参见[文档](https://developers.weixin.qq.com/miniprogram/dev/api/CanvasContext.setTextBaseline.html) |
+| content.bold     | 是否加粗                                                                                                              |
+| content.align    | 文字对齐                                                                                                              |
+| content.color    | 文本颜色                                                                                                              |
+| content.text     | 绘制的内容                                                                                                            |
