@@ -44,7 +44,7 @@ new DrawTextWrap(config).draw()
 ![Alt text](/img/2.png "Optional title")
 
 ### 配置项
-> 所有单位以 750设计稿来换算的 
+> 所有单位默认以750px设计稿来设置的
 
 
 | 配置项           | 描述                                                                                                                  |
