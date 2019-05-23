@@ -59,5 +59,6 @@ new DrawTextWrap(config).draw()
 | content.baseline | 文字竖直对齐方式，参见[文档](https://developers.weixin.qq.com/miniprogram/dev/api/CanvasContext.setTextBaseline.html) |
 | content.bold     | 是否加粗                                                                                                              |
 | content.align    | 文字对齐                                                                                                              |
+| content.maxLine  | 最多显示n行字符，默认不控制                                                                                           |
 | content.color    | 文本颜色                                                                                                              |
 | content.text     | 绘制的内容                                                                                                            |

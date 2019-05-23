@@ -24,6 +24,7 @@ class DrawTextWrap {
       color = "#333",
       lineHeight = 22,
       bold = false,
+      maxLine = null,
       baseline = "top",
       align = "left"
     } = this.content;
@@ -63,12 +64,14 @@ class DrawTextWrap {
       this.ctx.setTextAlign(align);
       this.ctx.fillText(element, x, y);
       y += this.rpxFont(lineHeight);
+      return (maxLine !== null && maxLine === ++index);
     });
+    
     this.next();
   }
   _cuttingline() {
     //切割行为数组 一个长度为一行
-    const { text, fontsize, color } = this.content;
+    const { text, fontsize } = this.content;
     this.ctx.setFontSize(this.rpxFont(fontsize));
     let arrText = text.split(""); //将字符切割为数组
     let drawTextArr = [], //需要绘制的文字，每个下标为段落一行
@@ -80,6 +83,10 @@ class DrawTextWrap {
       if (curLineWidth > this.maxWidth) {
         //如果超出阈值 新增一行内容
         curLineText = font; //重置 当前行内容
+        drawTextArr.push(curLineText);
+        lineNum++;
+      } else if (font === '\n') {//处理换行符
+        curLineText = "";
         drawTextArr.push(curLineText);
         lineNum++;
       } else {
