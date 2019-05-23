@@ -54,7 +54,7 @@ new DrawTextWrap(config).draw()
 | startX           | 基于canvas画布的x轴坐标开始绘制                                                                                       |
 | startY           | 基于canvas画布的y轴坐标开始绘制                                                                                       |
 | maxWidth         | 到此宽度开始折行                                                                                                      |
-| content          | 文本设置样式,初始值(这些值非必填项) fontsize = 16, color = '#333', lineHeight = 22, baseline = 'top', align = 'left'  |
+| content          | 文本设置样式,初始值(这些值非必填项) fontsize = 16, color = '#333', lineHeight = 22,  baseline = 'top', bold = false, align = 'left'  |
 | content.fontsize | 文字大小                                                                                                              |
 | content.baseline | 文字竖直对齐方式，参见[文档](https://developers.weixin.qq.com/miniprogram/dev/api/CanvasContext.setTextBaseline.html) |
 | content.bold     | 是否加粗                                                                                                              |
